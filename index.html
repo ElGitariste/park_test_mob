@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkinTest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="header-app">
+            <img src="logo.png" alt="Logo" class="logo">
+          
+        </div>
+
+        <!-- Formulaire pour saisir les données -->
+        <div class="card">
+            <div class="input">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter your Age">
+            </div>
+            <div class="input">
+                <label for="sex">Sex</label>
+                <select id="sex">
+                    <option value="0">Man</option>
+                    <option value="1">Woman</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="rna">RNA Biomarker</label>
+                <input type="number" step="any" id="rna" placeholder="Type RNA biomarker value">
+            </div>
+
+            <button class="calculate" onclick="calculateRisk()">Risk Estimate</button>
+        </div>
+
+      <!-- Div de résultat -->
+<div class="gauge-container" id="resultCard" style="display: none;">
+    <p id="resultText"></p> <!-- Texte du résultat -->
+    
+        <div class="gauge gauge--green">
+          <svg class="gauge__svg" viewBox="0 0 100 50">
+            <!-- Fond de la jauge -->
+            <path class="gauge__background" d="M 10 50 A 40 40 0 0 1 90 50" />
+      
+            <!-- Partie remplie de la jauge -->
+            <path class="gauge__fill" d="M 10 50 A 40 40 0 0 1 90 50" />
+
+      <!-- Aiguille -->
+      <line x1="50" y1="50" x2="50" y2="15" class="gauge__needle" />
+          </svg>
+        
+    
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
