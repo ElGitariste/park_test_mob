@@ -1,7 +1,7 @@
 {
-    "name": "IMC Calculator",
-    "short_name": "IMC",
-    "start_url": "/imc_app/index.html",
+    "name": "ParkinTest",
+    "short_name": "PT",
+    "start_url": "/park_test_mob/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",

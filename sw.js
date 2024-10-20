@@ -1,4 +1,4 @@
-const CACHE_NAME = "imc-calculator-cache";
+const CACHE_NAME = "park-test-cache";
 const urlsToCache = [
   "/",
   "/index.html",

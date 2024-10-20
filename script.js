@@ -22,7 +22,7 @@ function calculateRisk() {
   
     // Vérifier si les valeurs sont valides
     if (isNaN(age) || isNaN(rna)) {
-        alert("Veuillez entrer des valeurs valides pour l'âge et le RNA biomarker.");
+        alert("Please add correct value for age rna");
         return;
     }
   
