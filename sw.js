@@ -1,11 +1,14 @@
 const CACHE_NAME = "park-test-cache";
-const urlsToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/logo.png"
-];
+
+  const urlsToCache = [
+    "/park_test_mob/",
+    "/park_test_mob/index.html",
+    "/park_test_mob/style.css",
+    "/park_test_mob/script.js",
+    "/park_test_mob/logo.png"
+  ];
+  
+
 
 // Installation du service worker
 self.addEventListener("install", event => {
