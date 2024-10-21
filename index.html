@@ -47,8 +47,14 @@
             <!-- Partie remplie de la jauge -->
             <path class="gauge__fill" d="M 10 50 A 40 40 0 0 1 90 50" />
 
-      <!-- Aiguille -->
-      <line x1="50" y1="50" x2="50" y2="15" class="gauge__needle" />
+ <!-- Aiguille avec flèche -->
+ <g id="needle" transform="rotate(25, 55, 50)">
+    <!-- Ligne de l'aiguille -->
+    <line x1="50" y1="50" x2="50" y2="30" stroke="black" stroke-width="3" />
+    
+    <!-- Pointe de la flèche orientée vers le haut -->
+    <polygon points="50,20 47,30 53,30" fill="black" />
+  </g>
           </svg>
         
     
